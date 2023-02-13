@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Delete 3 resources" deleteContents="false" description="Delete 3 resources" element1="/Servers/danh mục TTB BV 2019 t‌h.xlsx" element2="/Servers/devices.xlsx" element3="/Servers/template.xlsx" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="3" stamp="1671987940077"/>
+</session>

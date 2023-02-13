@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	version="3.1">
+	<display-name>Quan_ly_thiet_bi_y_te</display-name>
+	<welcome-file-list>
+		<welcome-file>Login.do</welcome-file>
+	</welcome-file-list>
+
+	<filter>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<filter-class>medical.filters.CharacterEncodingFilter</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>CharacterEncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>medical.controllers.LoginController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/Login.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>LogoutController</servlet-name>
+		<servlet-class>medical.controllers.LogoutController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LogoutController</servlet-name>
+		<url-pattern>/Logout.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListUserController</servlet-name>
+		<servlet-class>medical.controllers.user.ListUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListUserController</servlet-name>
+		<url-pattern>/ListUser.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListDeviceController</servlet-name>
+		<servlet-class>medical.controllers.device.ListDeviceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListDeviceController</servlet-name>
+		<url-pattern>/ListDevice.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListDeviceTypeController</servlet-name>
+		<servlet-class>medical.controllers.device_type.ListDeviceTypeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListDeviceTypeController</servlet-name>
+		<url-pattern>/ListDeviceType.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListDepartmentController</servlet-name>
+		<servlet-class>medical.controllers.department.ListDepartmentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListDepartmentController</servlet-name>
+		<url-pattern>/ListDepartment.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ListProviderController</servlet-name>
+		<servlet-class>medical.controllers.provider.ListProviderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListProviderController</servlet-name>
+		<url-pattern>/ListProvider.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ListAccessoryController</servlet-name>
+		<servlet-class>medical.controllers.accessory.ListAccessoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListAccessoryController</servlet-name>
+		<url-pattern>/ListAccessory.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>MaintenanceScheduleController</servlet-name>
+		<servlet-class>medical.controllers.MaintenanceScheduleController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>MaintenanceScheduleController</servlet-name>
+		<url-pattern>/MaintenanceSchedule.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DetailUserController</servlet-name>
+		<servlet-class>medical.controllers.user.DetailUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailUserController</servlet-name>
+		<url-pattern>/ViewDetailUser.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DetailDeviceController</servlet-name>
+		<servlet-class>medical.controllers.device.DetailDeviceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailDeviceController</servlet-name>
+		<url-pattern>/ViewDetailDevice.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddUserInputController</servlet-name>
+		<servlet-class>medical.controllers.user.AddUserInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUserInputController</servlet-name>
+		<url-pattern>/AddUserInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddUserInputController</servlet-name>
+		<url-pattern>/AddUserValidate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddDeviceInputController</servlet-name>
+		<servlet-class>medical.controllers.device.AddDeviceInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDeviceInputController</servlet-name>
+		<url-pattern>/AddDeviceInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddDeviceInputController</servlet-name>
+		<url-pattern>/AddDeviceValidate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddAccessoryInputController</servlet-name>
+		<servlet-class>medical.controllers.accessory.AddAccessoryInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddAccessoryInputController</servlet-name>
+		<url-pattern>/AddAccessoryInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddAccessoryInputController</servlet-name>
+		<url-pattern>/AddAccessoryValidate.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddDepartmentInputController</servlet-name>
+		<servlet-class>medical.controllers.department.AddDepartmentInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDepartmentInputController</servlet-name>
+		<url-pattern>/AddDepartmentInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddDepartmentInputController</servlet-name>
+		<url-pattern>/AddDepartmentValidate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddDeviceTypeInputController</servlet-name>
+		<servlet-class>medical.controllers.device_type.AddDeviceTypeInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDeviceTypeInputController</servlet-name>
+		<url-pattern>/AddDeviceTypeInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddDeviceTypeInputController</servlet-name>
+		<url-pattern>/AddDeviceTypeValidate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddProviderInputController</servlet-name>
+		<servlet-class>medical.controllers.provider.AddProviderInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddProviderInputController</servlet-name>
+		<url-pattern>/AddProviderInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AddProviderInputController</servlet-name>
+		<url-pattern>/AddProviderValidate.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddUserConfirmController</servlet-name>
+		<servlet-class>medical.controllers.user.AddUserConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddUserConfirmController</servlet-name>
+		<url-pattern>/AddUserOK.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddDeviceConfirmController</servlet-name>
+		<servlet-class>medical.controllers.device.AddDeviceConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDeviceConfirmController</servlet-name>
+		<url-pattern>/AddDeviceOK.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddAccessoryConfirmController</servlet-name>
+		<servlet-class>medical.controllers.accessory.AddAccessoryConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddAccessoryConfirmController</servlet-name>
+		<url-pattern>/AddAccessoryOK.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>AddDepartmentConfirmController</servlet-name>
+		<servlet-class>medical.controllers.department.AddDepartmentConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDepartmentConfirmController</servlet-name>
+		<url-pattern>/AddDepartmentOK.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddDeviceTypeConfirmController</servlet-name>
+		<servlet-class>medical.controllers.device_type.AddDeviceTypeConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddDeviceTypeConfirmController</servlet-name>
+		<url-pattern>/AddDeviceTypeOK.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddProviderConfirmController</servlet-name>
+		<servlet-class>medical.controllers.provider.AddProviderConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>AddProviderConfirmController</servlet-name>
+		<url-pattern>/AddProviderOK.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditUserInputController</servlet-name>
+		<servlet-class>medical.controllers.user.EditUserInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserInputController</servlet-name>
+		<url-pattern>/EditUserInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditUserInputController</servlet-name>
+		<url-pattern>/EditUserValidate.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditUserConfirmController</servlet-name>
+		<servlet-class>medical.controllers.user.EditUserConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditUserConfirmController</servlet-name>
+		<url-pattern>/EditUserOK.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditDeviceInputController</servlet-name>
+		<servlet-class>medical.controllers.device.EditDeviceInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditDeviceInputController</servlet-name>
+		<url-pattern>/EditDeviceInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditDeviceInputController</servlet-name>
+		<url-pattern>/EditDeviceValidate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>HandoverDeviceController</servlet-name>
+		<servlet-class>medical.controllers.device.HandoverDeviceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HandoverDeviceController</servlet-name>
+		<url-pattern>/HandoverDevice.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>RepairDeviceController</servlet-name>
+		<servlet-class>medical.controllers.device.RepairDeviceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>RepairDeviceController</servlet-name>
+		<url-pattern>/RepairDevice.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FailDeviceController</servlet-name>
+		<servlet-class>medical.controllers.device.FailDeviceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FailDeviceController</servlet-name>
+		<url-pattern>/FailDevice.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditAccessoryInputController</servlet-name>
+		<servlet-class>medical.controllers.accessory.EditAccessoryInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditAccessoryInputController</servlet-name>
+		<url-pattern>/EditAccessoryInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditAccessoryInputController</servlet-name>
+		<url-pattern>/EditAccessoryValidate.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditDeviceConfirmController</servlet-name>
+		<servlet-class>medical.controllers.device.EditDeviceConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditDeviceConfirmController</servlet-name>
+		<url-pattern>/EditDeviceOK.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditAccessoryConfirmController</servlet-name>
+		<servlet-class>medical.controllers.accessory.EditAccessoryConfirmController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditAccessoryConfirmController</servlet-name>
+		<url-pattern>/EditAccessoryOK.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>EditDepartmentInputController</servlet-name>
+		<servlet-class>medical.controllers.department.EditDepartmentInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditDepartmentInputController</servlet-name>
+		<url-pattern>/EditDepartmentInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditDepartmentInputController</servlet-name>
+		<url-pattern>/EditDepartmentValidate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditDeviceTypeInputController</servlet-name>
+		<servlet-class>medical.controllers.device_type.EditDeviceTypeInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditDeviceTypeInputController</servlet-name>
+		<url-pattern>/EditDeviceTypeInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditDeviceTypeInputController</servlet-name>
+		<url-pattern>/EditDeviceTypeValidate.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>EditProviderInputController</servlet-name>
+		<servlet-class>medical.controllers.provider.EditProviderInputController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>EditProviderInputController</servlet-name>
+		<url-pattern>/EditProviderInput.do</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>EditProviderInputController</servlet-name>
+		<url-pattern>/EditProviderValidate.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteUserController</servlet-name>
+		<servlet-class>medical.controllers.user.DeleteUserController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteUserController</servlet-name>
+		<url-pattern>/DeleteUser.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteAccessoryController</servlet-name>
+		<servlet-class>medical.controllers.accessory.DeleteAccessoryController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteAccessoryController</servlet-name>
+		<url-pattern>/DeleteAccessory.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteDeviceController</servlet-name>
+		<servlet-class>medical.controllers.device.DeleteDeviceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteDeviceController</servlet-name>
+		<url-pattern>/DeleteDevice.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DeleteDepartmentController</servlet-name>
+		<servlet-class>medical.controllers.department.DeleteDepartmentController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteDepartmentController</servlet-name>
+		<url-pattern>/DeleteDepartment.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteDeviceTypeController</servlet-name>
+		<servlet-class>medical.controllers.device_type.DeleteDeviceTypeController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteDeviceTypeController</servlet-name>
+		<url-pattern>/DeleteDeviceType.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FixStatusDeviceController</servlet-name>
+		<servlet-class>medical.controllers.FixStatusDeviceController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FixStatusDeviceController</servlet-name>
+		<url-pattern>/FixStatusDevice.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>DeleteProviderController</servlet-name>
+		<servlet-class>medical.controllers.provider.DeleteProviderController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DeleteProviderController</servlet-name>
+		<url-pattern>/DeleteProvider.do</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>HandoverImageController</servlet-name>
+		<servlet-class>medical.controllers.device.HandoverImageController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HandoverImageController</servlet-name>
+		<url-pattern>/HandoverImage.do</url-pattern>
+	</servlet-mapping>
+	
+
+	<servlet>
+		<servlet-name>SuccessController</servlet-name>
+		<servlet-class>medical.controllers.SuccessController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SuccessController</servlet-name>
+		<url-pattern>/Success.do</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>SystemErrorController</servlet-name>
+		<servlet-class>medical.controllers.SystemErrorController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SystemErrorController</servlet-name>
+		<url-pattern>/SystemError</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>ImportFileController</servlet-name>
+		<servlet-class>medical.controllers.device.ImportFileController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ImportFileController</servlet-name>
+		<url-pattern>/ImportDevice.do</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>ExportFileController</servlet-name>
+		<servlet-class>medical.controllers.device.ExportFileController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ExportFileController</servlet-name>
+		<url-pattern>/ExportDevice.do</url-pattern>
+	</servlet-mapping>
+	
+		<servlet>
+		<servlet-name>ListHisLogController</servlet-name>
+		<servlet-class>medical.controllers.device.ListHisLogController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListHisLogController</servlet-name>
+		<url-pattern>/ListHisLog.do</url-pattern>
+	</servlet-mapping>
+	
+			<servlet>
+		<servlet-name>ListFileController</servlet-name>
+		<servlet-class>medical.controllers.device.ListFileController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ListFileController</servlet-name>
+		<url-pattern>/ListFile.do</url-pattern>
+	</servlet-mapping>
+	
+				<servlet>
+		<servlet-name>DetailFileController</servlet-name>
+		<servlet-class>medical.controllers.device.DetailFileController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DetailFileController</servlet-name>
+		<url-pattern>/ViewDetailFile.do</url-pattern>
+	</servlet-mapping>
+	
+
+	<session-config>
+		<session-timeout>10</session-timeout>
+	</session-config>
+</web-app>
+  

@@ -1,0 +1,7 @@
+INDEX VERSION 1.4+D:\Quanlythietbi\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1228534295.index
+3378482413.index
+3619806757.index
+3978661085.index
+2575956084.index
+331776012.index
