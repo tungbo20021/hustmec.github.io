@@ -122,19 +122,18 @@ public class FileReader {
 	        return listDevices;
 	    }
 	 
-//	    // Get Workbook
-//	    private static Workbook getWorkbook(InputStream inputStream, String excelFilePath) throws IOException {
-//	        Workbook workbook = null;
-//	        if (excelFilePath.endsWith("xlsx")) {
-//	            workbook = new XSSFWorkbook(inputStream);
-//	        } else if (excelFilePath.endsWith("xls")) {
-//	            workbook = new HSSFWorkbook(inputStream);
-//	        } else {
-//	            throw new IllegalArgumentException("The specified file is not Excel file");
-//	        }
-//	 
-//	        return workbook;
-//	    }
+//	    Get Workbook
+ //   private static Workbook getWorkbook(InputStream inputStream, String excelFilePath) throws IOException {
+  //      Workbook workbook = null;
+	//        if (excelFilePath.endsWith("xlsx")) {
+	//            workbook = new XSSFWorkbook(inputStream);
+	//        } else if (excelFilePath.endsWith("xls")) {
+	//            workbook = new HSSFWorkbook(inputStream);	        } else {
+    //        throw new IllegalArgumentException("The specified file is not Excel file");
+	//        }
+	 
+//	return workbook;
+	//    }
 	 
 	    // Get cell value
 	    private static Object getCellValue(Cell cell) {

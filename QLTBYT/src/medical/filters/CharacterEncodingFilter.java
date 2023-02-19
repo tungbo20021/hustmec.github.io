@@ -12,7 +12,7 @@ import medical.utils.Constants;
 
 /**
  * 
- * CharacterEncodingFilter: encoding request cho c√°c servlet
+ * CharacterEncodingFilter: encoding request cho c·c servlet
  */
 public class CharacterEncodingFilter implements Filter {
 

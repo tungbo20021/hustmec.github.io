@@ -42,7 +42,7 @@
 				<li><a href="${pageContext.request.contextPath}/ListUser.do"
 					class="list-group-item list-group-item-action bg-light">Danh sách người dùng</a></li>
 				<li><a href="${pageContext.request.contextPath}/ListDevice.do"
-					class="list-group-item list-group-item-action bg-light">Tính toán bảo dưỡng thiết bị</a></li>
+					class="list-group-item list-group-item-action bg-light">Danh sách thiết bị</a></li>
 				<li><a href="${pageContext.request.contextPath}/ListFile.do"
 					class="list-group-item list-group-item-action bg-light">Danh sách file upload</a></li>
 				<li><a href="${pageContext.request.contextPath}/ListHisLog.do"
@@ -52,7 +52,7 @@
 				<li><a href="${pageContext.request.contextPath}/ViewDetailUser.do?userId=${userIdFile}"
 					class="list-group-item list-group-item-action bg-light">Thông tin cá nhân</a></li>
 				<li><a href="${pageContext.request.contextPath}/ListDevice.do"
-					class="list-group-item list-group-item-action bg-light">Tính toán bảo dưỡng thiết bị</a></li>
+					class="list-group-item list-group-item-action bg-light">Danh sách thiết bị</a></li>
 				<li><a href="${pageContext.request.contextPath}/ListFile.do"
 					class="list-group-item list-group-item-action bg-light">Danh sách file upload</a></li>
 			</c:if>

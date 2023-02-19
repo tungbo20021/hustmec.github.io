@@ -13,8 +13,8 @@
 	<!-- Begin vung input-->
 	<form action="ImportDevice.do" method="post" enctype="multipart/form-data">
 		<label for="myfile">Chọn file excel:</label>
-		<input type="file" id="myfile" name="myfile"><br><br>
-		<input type="submit">
+		<input type="file"id="myfile" name="myfile"><br><br>
+		<input type="submit" value="Upload">
 	</form>
 	<!-- End vung input -->
 

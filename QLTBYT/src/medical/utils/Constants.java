@@ -52,8 +52,8 @@ public class Constants {
 	public static final String SYSTEM_ERROR_DO = "/SystemError";
 	
 	public static final String IMPORT_FILE_URL = "/jsp/import_excel.jsp";
-	public static final String DIR_FILE_EXCELL = "C:/Users/Thi/eclipse-workspace/Servers/ExcelFiles";
-	public static final String FILE_EXPORT = "C:/Users/Thi/Downloads/ListDevices";
+	public static final String DIR_FILE_EXCELL = "D:/Quanlythietbi/Servers/ExcelFiles";
+	public static final String FILE_EXPORT = "D:/Quanlythietbi/Excel/ListDevices";
 	public static final String TYPE_FILE_EXPORT = ".xlsx";
 
 	
